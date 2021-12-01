@@ -3,40 +3,11 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import {Link} from 'react-router-dom';
-import { useNavigate } from "react-router";
-import axios from "axios";
-export default function Login() {
-  const [nationalId, setNationalId] = useState("");
-  const [password, setPassword] = useState("");
-  const navigation = useNavigate();
-  function validateForm() {
-    return nationalId.length > 0 && password.length > 0;
-  }
-  function handleSubmit(event) {
-    event.preventDefault();
-    axios
-      .post("user/login", {
-        nationalId: nationalId,
-        password: password,
-      })
-      .then((response) => {
-        console.log(response);
-        if(response.status===200){
-          sessionStorage.setItem("userId", nationalId);
-        navigation("/Main",);
-      }
-      else {
-      }
-      })
-      .catch((err) => {
-        console.log(err);
-        alert("Not found")
-      });
-      
-  }
+
+export default function Register() {
+  
   return (
-    
-    <div className="Login">
+    <div className="Register">
       <img
         src="https://tawakkalna.sdaia.gov.sa/assets/img/illustrations/twlogo.png"
         style={{
@@ -57,33 +28,41 @@ export default function Login() {
         }}
       >
         <Card.Body>
-          <Form onSubmit={handleSubmit}>
+          <Form >
             <Form.Group size="lg" controlId="email">
               <Form.Label
                style={{ marginLeft: "3px", marginBottom: "30px"}}
-              >Login</Form.Label>
-              <Link to="/Register">
+              >Register</Form.Label>
+              <Link to="/">
               <Card.Link
-               
-                style={{ marginLeft: "13rem", color: "#2EAFA1", marginTop: "20px" }}
-              >
-                Sign Up
-              </Card.Link></Link>
+                href="#"
+                style={{ marginLeft: "13rem", color: "#2EAFA1", marginTop: "20px" }}>
+                    Sign In
+              </Card.Link>
+              </Link>
               <Form.Control
                 autoFocus
                 type="nationalId"
                 placeholder="Enter nationalId"
-                value={nationalId}
-                onChange={(e) => setNationalId(e.target.value)}
+                
+                
               />
             </Form.Group>
             <Form.Group size="lg" controlId="password">
               <Form.Label></Form.Label>
               <Form.Control
-                placeholder="Enter password "
+                placeholder="New password "
                 type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                
+                
+              /></Form.Group>
+              <Form.Group size="lg" controlId="password">
+              <Form.Label></Form.Label>
+              <Form.Control
+                placeholder="Confirm the new password"
+                type="password"
+                
+                
               />
               <br></br>
               <Form.Group className="mb-3" controlId="formBasicCheckbox">
@@ -91,17 +70,16 @@ export default function Login() {
               </Form.Group>
             </Form.Group>
             <br></br>
+            <Link to="/">
             <Button
              variant="success"
               size="lg"
               type="submit"
               style={{ backgroundColor: "#2EAFA1", width: "300px", marginLeft: "19px" }}
-              disabled={!validateForm()}
+             
             >
-              Next
-            </Button>
-            <br/>
-            
+              Register
+            </Button></Link>
           </Form>
         </Card.Body>
       </Card>

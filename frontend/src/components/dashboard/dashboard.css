@@ -5,3 +5,31 @@
       margin:5px ;
      padding:20px;
 }
+.myImage{
+    width: 60px;
+    
+    
+
+}
+.Cards{
+    margin: 20px;
+    
+         
+}
+.text{
+    color: black;
+    
+}
+.card12{
+    margin: 20px;
+    border:  5px;
+    border-color: black;
+    border-Radius: 10px;
+   box-Shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* .myContainer{
+    border: 'black 2px';
+    border-Radius: '7px';
+   box-Shadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)';
+
+} */

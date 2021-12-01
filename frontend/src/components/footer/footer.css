@@ -1,19 +1,19 @@
 .App{
     margin: 40px;
 }
-.navbar{
+.nav1{
     display: flex;
     justify-content: space;
     justify-content: left;
   
 }
-.nav-link{
+.nav3{
     display:unset;
     margin: 5px;
     padding:inherit;
     color: grey;
 }
-.nav{
+.nav2{
     margin: 4px;
     padding: auto;
     display: flow-root;
@@ -22,7 +22,7 @@
     display:"flex";
     justify-content:"center";
 }
-.pt-2{
-    display: flex;
+.p1{
+    color: black;
    
 }
