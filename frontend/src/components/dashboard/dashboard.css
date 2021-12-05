@@ -21,11 +21,11 @@
     
 }
 .card12{
-    margin: 20px;
-    border:  5px;
-    border-color: black;
+    margin:20px;
+   
+    border: black 5px;
+    
     border-Radius: 10px;
-   box-Shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* .myContainer{
     border: 'black 2px';

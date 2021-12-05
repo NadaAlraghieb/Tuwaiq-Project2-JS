@@ -1,0 +1,27 @@
+.imgTwaLogin{
+    width:15rem;
+          margin-left:40rem;
+          margin-bottom:20px;
+          margin-top:10px;
+          padding:30px;
+}
+.cardTwaLogin{
+    width:23rem;
+    margin-left:35rem;
+  border-radius:2px;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.LabelTwaLogin{
+    margin-left:3px;
+    margin-bottom:30px;
+}
+.LinkTwaLogin{
+    margin-left:13rem;
+    color:#2EAFA1;
+     margin-top:20px;
+}
+.buttonTwaLogin{
+    background-color:#2EAFA1;
+     width:300px; 
+     margin-left:19px;
+}
